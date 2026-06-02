@@ -82,31 +82,31 @@ int main(){
                 case_option=1;
                 while(case_option){
                     printf("Search using user-id or user-name:\n01 for user-id\n02 for user-name\n03 To Exit\n\n");
-                    printf("Enter here:");
+                    printf("Enter here: ");
                     scanf("%d",&sub_switch_option);
 
                     switch(sub_switch_option){
-                        case 1:{
+                        case 1:
                             int target_id=0;
                             printf("Enter the target id: ");
                             scanf("%d",&target_id);
                             printf("\n");
                             print_specific_id(info,size,target_id);
                             break;
-                           } 
-                        case 2:{
+                            
+                        case 2:
                             char target_name[50];
                             printf("Enter the target name: ");
                             scanf("%s",target_name);
                             printf("\n");
                             print_specific_name(info,size,target_name);
                             break;
-                        }
+                        
                         case 3:
                             case_option=0;
                             break;
                         default:
-                            printf("Invalid Input\nTry again\n");
+                            printf("Invalid Input\nTry again\n\n");
                             break;
                     }
                 }

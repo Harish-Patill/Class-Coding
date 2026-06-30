@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main(){
     int num=0;
-    int count_zero=0;
     int count_one=0;
 
     printf("Enter the num: ");
